@@ -1,0 +1,166 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap');
+
+
+/* Variables */
+
+:root{
+
+    /* fonts Variavels */
+        --Josefine: 'Josefin Sans', sans-serif;
+        --Open_Sans: 'Open Sans', sans-serif;
+        --Edu_Sa_Begginer: 'Edu SA Beginner', cursive;
+    /* end */
+
+    --MainColor: rgb(10, 20, 43);
+
+    --blue: rgb(51, 103, 201);
+    --red: rgb(212, 44, 81);
+    --white: rgb(231, 255, 237);
+    --black: rgb(34, 32, 32);
+    
+    --NavMainClr: rgb(238, 255, 0);
+    --HoverMainColor: rgb(16, 15, 97);
+    --HoverMainShdw: 0 0 12px rgb(56, 52, 78);
+
+}
+
+/* Itens */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 232);
+}
+section{
+    width: 100%;
+    height: 50vh;
+    background-color: var(--white);
+    color: rgb(39, 8, 0);
+    display: flex;
+    /* border: 1px solid black; */
+}
+a{
+    text-decoration: none;
+    color: var(--MainColor);
+}
+li{
+    display: inline;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .3s ease-in-out;
+}
+a li:hover{
+    color: var(--HoverMainColor);
+    text-shadow: var(--HoverMainShdw);
+}
+/* Classes ["."] */
+    .nav{
+        width: 100%;
+        height: 12vh;
+        background-color: var(--NavMainClr);
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 0 16px 8px var(--black);
+        z-index: 1;
+    }
+        .nav * {
+            margin: 5px;
+        }
+
+        .logo{
+            font-size: 1.8rem;
+            color: var(--MainColor);
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+    .content{
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 10px;
+    }
+        .textConteiner{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+            .text{
+                width: 30vw;
+                height: 35%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 40px;
+                padding: 5px;
+                border: 2px dotted rgb(85, 85, 85);
+            }
+                .text p{
+                    font-family: var(--Josefine);
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                    color: var(--MainColor);
+                }
+        .image{
+            width: 70%;
+            height: 60%;
+        }
+            .image img{
+                width: 100%;
+                height: 100%;
+            }
+        .imageDescription{
+            width: 70%;
+            height: 6.5%;
+            border: 1px dotted black;
+        }
+            .imageDescription p{
+                font-family: var(--Edu_Sa_Begginer);
+                font-size: .9rem;
+                color: var(--MainColor);
+            }
+                .imageDescription p a{
+                    text-decoration: none;
+                    color: var(--blue);
+                }
+
+/* expecific classes */
+
+    .shdw{
+        /* box-shadow: 0 0 ; */
+        box-shadow: -25px 20px teal;
+    }
+        .margin_top_35px{
+            margin-top: 35px;
+        }
+            .margin_left_35px{
+                margin-left: 35px;
+            }
+        .conteiner{
+            width: 100%;
+            height: 100%;
+        }
+            .conteiner_HalfHeight{
+                width: 100%;
+                height: 50%;
+            }
+            .conteiner_HalfWidth{
+                width: 50%;
+                height: 100%;
+            }
+        .flexCentrilize{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+            .flexCentrilizeFull{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
